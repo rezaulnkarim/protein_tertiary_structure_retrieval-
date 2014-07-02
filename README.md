@@ -29,8 +29,6 @@ BicubicInterPol uses GaussJordan.
 5. Now we have COMoGrad features as an array 256 values in space delimited text files  and there are 152,487 such files. We also have COMoGrad+PHOG features as an array 256+765=1021 values in space delimited text files  and there are 152,487 such files in another directory. We are now ready to run queries with these features.
 
 
-6.
-
 
 
 
