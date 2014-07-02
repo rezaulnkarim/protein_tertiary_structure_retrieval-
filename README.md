@@ -19,5 +19,22 @@ Please go to the link to download and to know in details about the format of the
 BicubicInterPol uses GaussJordan.
 **********************************************************************************
 
-3.
+
+3. The next step is to transform all the matrices that are in dimension of power of 2 like 16x16,32x32 , 64x64, 128x128 ... 1024x1024 to a dimension of 128x128 for our methods. We have done this with matlab. The matlab script "create_image_from_mat_textfile_and_db2_and_imresize_on_mat64.m" is used to transform the 64x64 matrix from text file and output a gray scale image of sixe 128x128 and 32x32. This script is used with slight modification for matrices of other dimensions like 256x256, 512x512 and so on. As anyone with a little knowledge can do the modification accordingly, all the modified scripts are not given here.
+
+
+4. Now we have 128x128 grayscale images. The task next is to extract our COMoGrad and PHOG features. To extract PHOG feature, we have taken help of the code from "https://github.com/jason2506/SimpleCBIR/blob/master/src/phog.m". The code to extract COMoGrad is done by us. The matlab script "create_comog_phog_mat.m" is used to extract COMoGrad feature on a directory, PHOG feature on a directory and both COMoGrad and PHOG feature on another directory. Please ahange inputdir to the directory of 128x128 grayscale images in your system. As there was 152,387 grayscale image files and matlab have problems in handling huge directories, I have fragmented them to 30 directories of 5000 files and have run the code 30 times changing the indir name. You also have to change the 3 out directory name according to your filesystem. The script "create_comog_phog_mat.m" have dependency on "comog.m" , "anna_phogDescriptor.m", "anna_phog.m", "anna_binMatrix.m".
+
+
+5. Now we have COMoGrad features as an array 256 values in space delimited text files  and there are 152,487 such files. We also have COMoGrad+PHOG features as an array 256+765=1021 values in space delimited text files  and there are 152,487 such files in another directory. We are now ready to run queries with these features.
+
+
+6.
+
+
+
+
+
+
+
 
