@@ -29,8 +29,14 @@ BicubicInterPol uses GaussJordan.
 5. Now we have COMoGrad features as an array 256 values in space delimited text files  and there are 152,487 such files. We also have COMoGrad+PHOG features as an array 256+765=1021 values in space delimited text files  and there are 152,487 such files in another directory. We are now ready to run queries with these features.
 
 
-
-
+**********************************************************************************
+Database Connection:
+IP:198.38.94.53
+Username:protein_db_USER
+Password:protein_db_USER123
+dbname:pprotein
+Use it to execute any query for tertiary structure retrieval. To download the database, its available @ http://202.4.119.43/abc/pproteindb.sql.
+By downloading the sql file the query will be faster than the remote database access. Thanks
 
 
 
