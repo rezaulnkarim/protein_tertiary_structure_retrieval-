@@ -30,7 +30,7 @@ BicubicInterPol uses GaussJordan.
 
 
 **********************************************************************************  
-
+6. Here we provide the database containing our comograd+phog features. You can use the extracted features in db to run retrieval queries with comparing these features. We have used euclidean distance measure between feature vectors as distance measure for our method. 
 
 Database Connection:  
 IP:198.38.94.53  
